@@ -48,3 +48,37 @@ h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid #000000;
 }
+
+.Products img {
+    width: 50%;
+    margin-bottom: 20px ;
+}
+
+.Products p {
+    margin-bottom: 10px;
+}
+
+.Products button {
+    display: block;
+    width: 50%;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.Products {
+    width: 100%;
+}
+section h2 {
+    margin-top: 50px;
+}
+.Products {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; 
+}
+
+.Products {
+    margin-left: 70px;
+}
+
+
+
