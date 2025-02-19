@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    background-color: rgb(99, 99, 228);
+    padding: 16px;
+}
+h1 {
+    color: #fff;
+}
+button {
+    padding: 6px;
+    font-size: 12px;
+    background-color: rgb(194, 93, 35);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 136, 0);
+    border-radius: 9px;
+}
+
+.container img {
+    width: 40%;
+    margin-right: 20px;
+}
+.Sobre {
+    display: flex;
+    padding: 9px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
