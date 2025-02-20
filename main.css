@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    background-color: #ccc;
 }
 
 .container {
@@ -14,12 +15,16 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+header > .container {
+    background-color:rgb(99, 99, 228) ;
+}
 header {
     background-color: rgb(99, 99, 228);
     padding: 16px;
 }
 h1 {
     color: #fff;
+    background-color: rgb(99, 99, 228);
 }
 button {
     padding: 6px;
@@ -28,6 +33,9 @@ button {
     border: none;
     border-radius: 2px;
     cursor: pointer;
+}
+#header {
+    background-color: rgb(99, 99, 228);
 }
 
 button:hover {
@@ -46,7 +54,8 @@ button:hover {
 
 h2 {
     margin-bottom: 10px;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid rgb(99, 99, 228);
+    color: rgb(99, 99, 228);
 }
 
 .Products img {
@@ -64,6 +73,10 @@ h2 {
     color: #fff;
     border-radius: 5px;
     margin-top: 10px;
+    background-color: rgb(99, 99, 228);
+}
+.Products button:hover {
+    background-color: rgb(132, 132, 236);
 }
 .Products {
     width: 100%;
@@ -78,6 +91,75 @@ section h2 {
 
 .Products {
     margin-left: 70px;
+}
+.Products p {
+    font-size: 1.3em;
+}
+
+.Products p {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 1023px) and (min-width:768px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .Products {
+        display: grid;
+        grid-template-columns: 50% 50%; 
+    }
+    
+    .Products {
+        margin-left: 70px;
+    }
+    .Products article img {
+        margin-top: 20px ;
+    }
+    .container {
+        overflow-x: hidden;
+    }
+    .Products p {
+        font-size: 2em;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .container {
+        max-width: 80%;
+    }
+    
+    .Products {
+        display: block;
+        margin-left: 27%;
+    }
+    .Products button {
+        max-width: 327%;
+    }
+    .container .Products {
+        align-items: center;
+    }
+    .Products article img {
+        margin-top: 20px;
+    }
+    header div.container {
+        flex-direction: column;
+    }
+    .Sobre {
+        flex-direction: column;
+    }
+    .Sobre h2 {
+        margin-top: 20px;
+    }
+    .Sobre img {
+        margin-left: 29%;
+    }
+    .Products img {
+        max-width: 50%;
+    }
+    .Products p {
+        font-size: 2em;
+    }
 }
 
 
